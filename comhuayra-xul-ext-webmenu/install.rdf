@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">	
+        <em:unpack>true</em:unpack>
+        <em:id>comhuayra-menu@comunidadhuayra.org</em:id>		
+        <em:version>0.2</em:version>
+        <em:type>2</em:type>
+        <em:name>ComunidadHuayra.org (Menu de navegación)</em:name>
+        <em:description>Añade un botón a la barra de herramientas que despliega un menú para navegar ComunidadHuayra.org</em:description>
+		<em:creator>sjlvanq@ComunidadHuayra</em:creator>
+        <em:homepageURL>http://www.comunidadhuayra.org/</em:homepageURL>
+        <em:iconURL>chrome://comhuayra-menu/content/images/32.png</em:iconURL>
+		<em:icon64URL>chrome://comhuayra-menu/content/images/64.png</em:icon64URL>
+        <em:aboutURL>chrome://comhuayra-menu/content/about.xul</em:aboutURL>
+		
+		<em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
+                <em:minVersion>1.5</em:minVersion>
+                <em:maxVersion>11.0a1</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+		
+    </Description>
+</RDF>

@@ -1,0 +1,4 @@
+content comhuayra-menu chrome/content/
+skin	comhuayra-menu	classic/1.0	chrome/skin/
+overlay	chrome://browser/content/browser.xul	chrome://comhuayra-menu/content/firefoxOverlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://comhuayra-menu/skin/overlay.css

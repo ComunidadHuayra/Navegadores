@@ -1,0 +1,163 @@
+/* This is the CSS for Firefox 3 and up */
+
+/* Menu CSS */
+/* ##################### */
+
+/* Settings for menu social items */
+
+.menufacebook{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/facebook.png");
+}
+
+.menugoogle{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/googleplus.png");
+}
+
+.menutwitter{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/twitter.png");
+}
+
+.menuyoutube{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/youtube.png");
+}
+
+/* Settings for logo in menu items */
+menuitem.tglogo {
+    -moz-appearance: none;
+	height:55px;
+	margin-top: -1px;
+	padding: 6px 0px 4px 0px !important;
+	background-image: url(chrome://comhuayra-menu/content/images/comhuayra-menu.png);
+	background-repeat: no-repeat;	
+	background-position: center;
+}
+/* Settings for Logo menu items WHEN hovered over */
+menupopup#menu_menuPopup > menuitem.tglogo[_moz-menuactive="true"],
+menupopup#toolbar_menuPopup > menuitem.tglogo[_moz-menuactive="true"]{
+   -moz-appearance: none;
+   background-color: transparent;
+}
+
+/* Settings for section header items when NOT hovered over */
+menuitem.menusectionheader {
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   font: bold   11px tahoma;
+   text-shadow: 1px 1px 1px rgba(128,128,128,0.4);
+   text-align: center;
+   color: #000000;
+   
+}
+
+/* Settings for header menu items WHEN hovered over */
+menupopup#menu_menuPopup > menuitem.menusectionheader[_moz-menuactive="true"],
+menupopup#toolbar_menuPopup > menuitem.menusectionheader[_moz-menuactive="true"] {
+   -moz-appearance: none;
+   background-color: transparent;
+}
+
+.menusearchindex {
+	-moz-appearance: none;
+	background-color: transparent;
+	background-image:url(chrome://comhuayra-menu/content/images/search.png);
+	background-position: 2px 6px;
+	background-repeat:no-repeat;
+	padding-left:25px;
+	padding-top:0px;
+}
+
+menu#tgcontext {
+list-style-image: url("chrome://comhuayra-menu/content/images/search.png");
+
+}
+
+#footer {
+  margin-left:8px;margin-bottom:8px;
+}
+
+/* About Dialog Box CSS */
+/* ############################ */
+
+/* How URL links look like */
+.url {
+font-family: Arial, Geneva, sans-serif;
+font-size: 9px;
+text-decoration: none;
+margin-right:20px;
+color: #666;
+}
+
+/* Underline URLs when hovered over */
+.url:hover {
+color: #000;
+text-shadow: 3px 3px 2px #dadada;
+}
+
+/* Look of the Extension History label */
+.extensionhistory {
+   font-family: Arial, Geneva, sans-serif;
+   font-style: italic;
+   text-decoration: none;
+}
+
+/* Settings for the version history box */
+#versionhistory {
+   overflow: auto;
+   border: 1px solid black;
+   padding: 4px;
+   margin: 0px 6px;
+   height: 150px;
+   width: 300px;
+}
+
+/* How version numbers look */
+.aboutversion {
+   font-weight: bold;
+   font-size: 12px;
+}
+
+/* How improvement notes for each version number look */
+.aboutimporovement {
+   margin-left: 20px;
+   color: gray;
+}
+
+/* CSS for toolbar buttons */
+/* ############################ */
+#comhuayra-menu-button, #wrapper-comhuayra-menu-button, #menu-sidebarbutton, #wrapper-menu-sidebarbutton  {
+	list-style-image: url("chrome://comhuayra-menu/content/images/20.png");
+	-moz-box-orient: horizontal;
+}
+
+[iconsize="small"] #comhuayra-menu-button, [iconsize="small"] #wrapper-comhuayra-menu-button, [iconsize="small"] #menu-sidebarbutton, [iconsize="small"] #wrapper-menu-sidebarbutton  {
+	list-style-image: url("chrome://comhuayra-menu/content/images/20.png");
+	-moz-box-orient: horizontal;
+}
+
+.menuazul{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/icono-huayra-azul.png");
+}
+.menuvioleta{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/icono-huayra-violeta.png");
+}
+.menuverde{
+   -moz-appearance: none;
+   padding: 2px 0px 2px 0px !important;
+   list-style-image: url("chrome://comhuayra-menu/content/images/icono-huayra-verde.png");
+}
+
+.menuitem-iconic{
+	margin-left: 5px;
+}

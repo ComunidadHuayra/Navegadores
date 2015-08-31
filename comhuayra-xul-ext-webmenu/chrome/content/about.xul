@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://comhuayra-menu/skin/overlay.css" type="text/css"?>
+
+<window class="dialog"
+   title="Huayra Comunidad - Menu"
+   orient="vertical"
+   autostretch="always"
+   onload="sizeToContent()"
+   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/x-javascript" src="chrome://comhuayra-menu/content/overlay.js"/>
+
+<tabbox flex="1">
+    <tabs>
+       <tab label="Acerca de" />
+       <tab label="Changelog" />
+	   <tab label="Créditos" />
+    </tabs>
+    <tabpanels flex="1" >
+		<tabpanel>
+			<vbox flex="1">
+				<text value="Huayra Comunidad - Menu" style="font-family: Calibri, Verdana, Arial; font-weight: bold; font-size: x-large; text-align:center;"/>
+				<text style="font-size: small;" value="Version 0.2" />
+				<separator class="thin"/>
+					<vbox align="center">
+						<image src="chrome://comhuayra-menu/content/images/vaca-volando-flip--1.gif"/>
+						<text value="Comunidad de Usuarios de Huayra GNU/Linux" style="font-size: xx-small;"/>
+						<text class="url" value="http://www.comunidadhuayra.org/" style="font-size: xx-small;" onclick="menu_OpenUrl('http://www.comunidadhuayra.com.ar'); window.close();" />
+						
+						<separator class="thin"/>
+					</vbox>
+			</vbox>
+		</tabpanel>
+
+		<tabpanel>
+			<vbox flex="1">
+			<label class="extensionhistory">Lista de Cambios</label>
+			<vbox id="versionhistory" flex="1">	
+                <label class="aboutversion">0.2</label>
+				<label class="aboutimporovement">- Limpieza de foo-code</label>
+				<label class="aboutimporovement">- Renombramiento de identificadores</label>
+				<label class="aboutimporovement">- Fixes menores</label>
+                <label class="aboutversion">0.1</label>
+				<label class="aboutimporovement">- Vaca</label>
+			</vbox>
+			</vbox>
+		</tabpanel>
+		
+		<tabpanel>
+			<vbox flex="1">
+			<label class="extensionhistory">Créditos</label>
+			<vbox id="versionhistory" flex="1">
+				<label class="aboutversion">Por:</label>
+				<label class="aboutimporovement">@Vaca Huayra GNU/Linux</label>
+				<label class="aboutimporovement">@Sjlvanq (Silvano E. Roques)</label>
+				<label class="aboutimporovement">...</label>
+				<label class="aboutimporovement">[Su nombre aquí y ordene alfabéticamente después de @Vaca]</label>
+				<label class="aboutimporovement">...</label>
+				<label class="aboutimporovement">Basado en TecnoGaming Menu 1.1.1 de Lisandro Raffin</label>
+				<label class="aboutversion" style="padding-top:5px;">Sugerencias, testeo:</label>
+				<label class="aboutimporovement">@Ricardo M. Morales</label>
+				<label class="aboutimporovement">@Pablo Zambrano</label>
+			</vbox>
+			</vbox>
+		</tabpanel>
+
+	</tabpanels>
+</tabbox>
+
+<hbox>
+   <spacer flex="1"/>
+   <button label="Cerrar" oncommand="window.close();"/>
+</hbox>
+
+</window>

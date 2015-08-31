@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://comhuayra-menu/skin/overlay.css" type="text/css"?>
+
+<overlay id="menu-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script src="install.js"/>
+  
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="comhuayra-menu-button"/>
+	</toolbarpalette>
+
+
+	<!-- button details -->
+	<toolbarbutton id="comhuayra-menu-button" label="Comunidad Huayra" tooltiptext="Comunidad Huayra - Menu" type="menu" class="toolbarbutton-1 chromeclass-toolbar-additional">
+
+		<!-- The drop down menu itself -->
+		<menupopup class="menu" id="menu_menuPopup" ignorekeys="true" onpopupshowing="" >
+			<!-- Menu code -->
+			<!-- hidePopup is used to force hide the popup menu when right click is used -->
+			<!-- event.preventDefault is used to prevent context menu opening when right click is used -->
+            <menuitem class="tglogo" />
+
+            <menuseparator/>
+			
+			<menuitem id="menu-toolbar-search-box-wrap" persist="width" class="menusearchindex">
+				<menulist id="menu-toolbar-search-box" tooltiptext="Buscar en todos los sitios de Comunidad Huayra (Google)"  editable="true" flex="1" onkeypress="if(event.keyCode == KeyEvent.DOM_VK_RETURN || event.keyCode == KeyEvent.DOM_VK_ENTER)hidePopup(); menu_KeyHandler(event);">
+				</menulist>
+			</menuitem>
+			
+			<menuseparator/>
+
+            <menuitem class="menusectionheader" label=" Comunidad Huayra" />
+            <menuitem class="menuitem-iconic menuazul" label=" Portal" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://www.comunidadhuayra.org/');" />
+			<menuitem class="menuitem-iconic menuvioleta" label=" Vacatrucos"  onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://www.comunidadhuayra.org/index.php/menu-huayra-comunidad/vacatrucos');" />
+			<menuitem class="menuitem-iconic menuvioleta" label=" WikiComHuayra" 		 onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://wiki.comunidadhuayra.org/');" />
+			<menuitem class="menuitem-iconic menuvioleta" label=" Repositorios" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://www.comunidadhuayra.org/index.php/menu-huayra-comunidad/repositorio-comunidad');" />
+			<menuitem class="menuitem-iconic menuvioleta" label=" Bugtracker" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://bugs.comunidadhuayra.org/');" />
+            <menuitem class="menuitem-iconic menuvioleta" label=" Galería" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://galeria.comunidadhuayra.org/');" />
+			<menuitem class="menuitem-iconic menuvioleta" label=" Encuestas"  onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://encuestas.comunidadhuayra.org/');" />
+			
+			<menu class="menu-iconic menuitem-iconic menuverde" id="menu_expand" label=" Foros">
+			    <menupopup class="menuitem-iconic menuforo" id="menu_menuPopup">
+               <menuitem class="menuitem-iconic menuverde" label=" Portada/Resumen" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/');" />
+               <menuitem class="menuitem-iconic menuverde" label=" Listado de Foros" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=forum');" />
+			   <menuitem class="menuitem-iconic menuverde" label=" Temas Nuevos" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=unread');" />
+			   <menuitem class="menuitem-iconic menuverde" label=" Temas Actualizados" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=unreadreplies');" />
+               <menuitem class="menuitem-iconic menuverde" label=" Actividad Reciente" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=recent');" />
+			   <menuitem class="menuitem-iconic menuverde" label=" Mensajes Privados" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=pm');" />
+               <menuitem class="menuitem-iconic menuverde" label=" Buscar en los Foros" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=search');" />
+               <menuitem class="menuitem-iconic menuverde" label=" Estadísticas" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=stats');" />               
+               <menuitem class="menuitem-iconic menuverde" label=" Ayuda" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://foros.comunidadhuayra.org/index.php?action=help');" />			   
+               </menupopup>
+            </menu>
+            <menuseparator/>         						
+			
+            <menuitem class="menuitem-iconic menufacebook" label=" Facebook" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'https://facebook.com/groups/huayraclub/');" />
+			<menuitem class="menuitem-iconic menugoogle" label=" Google+" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'https://plus.google.com/u/0/communities/108318273071875780908');" />
+            <menuitem class="menuitem-iconic menutwitter" label=" Twitter" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'https://twitter.com/ComunidadHuayra/');" />
+			<menuitem class="menuitem-iconic menuyoutube" label=" Canal de Youtube" onclick="event.preventDefault(); comHuayraMenu.menu_open(event, 'http://www.youtube.com/channel/UCK3KbvUMlVpEiv9qz7BzO4A');" />
+			<menuseparator/>
+			<hbox id="footer">
+			<text class="url" value="Info. del Add-On" style="float:left" tooltiptext="Información sobre la extensión de Menu para Comunidad Huayra" onclick="window.openDialog('chrome://comhuayra-menu/content/about.xul','','chrome,titlebar,toolbar,centerscreen,modal');"/>
+			</hbox>
+		<!-- /Menu code end -->
+         </menupopup>
+	</toolbarbutton>
+</overlay>
