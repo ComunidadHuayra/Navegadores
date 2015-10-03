@@ -6,32 +6,24 @@
 /* Settings for menu social items */
 
 .menufacebook{
-   -moz-appearance: none;
-   padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/facebook.png");
 }
 
 .menugoogle{
-   -moz-appearance: none;
-   padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/googleplus.png");
 }
 
 .menutwitter{
-   -moz-appearance: none;
-   padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/twitter.png");
 }
 
 .menuyoutube{
-   -moz-appearance: none;
-   padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/youtube.png");
 }
 
 /* Settings for logo in menu items */
 menuitem.tglogo {
-    -moz-appearance: none;
+   -moz-appearance: none;
 	height:55px;
 	margin-top: -1px;
 	padding: 6px 0px 4px 0px !important;
@@ -42,13 +34,12 @@ menuitem.tglogo {
 /* Settings for Logo menu items WHEN hovered over */
 menupopup#menu_menuPopup > menuitem.tglogo[_moz-menuactive="true"],
 menupopup#toolbar_menuPopup > menuitem.tglogo[_moz-menuactive="true"]{
-   -moz-appearance: none;
+/*   -moz-appearance: none;*/
    background-color: transparent;
 }
 
 /* Settings for section header items when NOT hovered over */
 menuitem.menusectionheader {
-   -moz-appearance: none;
    padding: 2px 0px 2px 0px !important;
    font: bold   11px tahoma;
    text-shadow: 1px 1px 1px rgba(128,128,128,0.4);
@@ -60,12 +51,10 @@ menuitem.menusectionheader {
 /* Settings for header menu items WHEN hovered over */
 menupopup#menu_menuPopup > menuitem.menusectionheader[_moz-menuactive="true"],
 menupopup#toolbar_menuPopup > menuitem.menusectionheader[_moz-menuactive="true"] {
-   -moz-appearance: none;
    background-color: transparent;
 }
 
 .menusearchindex {
-	-moz-appearance: none;
 	background-color: transparent;
 	background-image:url(chrome://comhuayra-menu/content/images/search.png);
 	background-position: 2px 6px;
@@ -76,7 +65,6 @@ menupopup#toolbar_menuPopup > menuitem.menusectionheader[_moz-menuactive="true"]
 
 menu#tgcontext {
 list-style-image: url("chrome://comhuayra-menu/content/images/search.png");
-
 }
 
 #footer {
@@ -143,21 +131,17 @@ text-shadow: 3px 3px 2px #dadada;
 }
 
 .menuazul{
-   -moz-appearance: none;
-   padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/icono-huayra-azul.png");
 }
 .menuvioleta{
-   -moz-appearance: none;
    padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/icono-huayra-violeta.png");
 }
 .menuverde{
-   -moz-appearance: none;
-   padding: 2px 0px 2px 0px !important;
    list-style-image: url("chrome://comhuayra-menu/content/images/icono-huayra-verde.png");
 }
 
 .menuitem-iconic{
-	margin-left: 5px;
+   margin-left: 5px;
+   padding: 2px 0px 2px 0px !important;
 }
